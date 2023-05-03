@@ -1,0 +1,16 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "Backend para el proyecto de la calculadora",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "calculadora",
+    "api",
+    "backend"
+  ],
+  "author": "Vanessa Bernal",
+  "license": "ISC"
+}
