@@ -19,16 +19,20 @@
             <div class="container">
                 <div class = "form-group">
                     <label for="num1">Numero 1</label>
-                    <input class="form-control" id= "num1"type="number" required>
+                    <input class="form-control" id= "num1" name="num1" type="number" required>
                     <label for="num2">Numero 2</label>
-                    <input class="form-control" id= "num2"type="number" required>
+                    <input class="form-control" id= "num2" name="num2" type="number" required>
                 </div>
-                <button class= "btn btn-primary mt-3" id= "boton"type="submit">Enviar</button>
+                <button class= "btn btn-primary mt-3" id= "suma" type="submit">+</button>
+                <button class= "btn btn-primary mt-3" id= "resta" type="submit">-</button>
+                <button class= "btn btn-primary mt-3" id= "multiplicar">*</button>
+                <button class= "btn btn-primary mt-3" id= "dividir" type="submit">/</button>
             </div>
             
         </form>
-        <div id="resultado">
-
+        <div class = "container">
+            <div id="resultado" class="form-control">
+            </div>
         </div>
     </main>
     <footer>

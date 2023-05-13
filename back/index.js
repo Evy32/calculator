@@ -22,7 +22,6 @@ app.use( (req, res, next)=>{
 app.post(
     '/sumar',
     (req, res)=>{
-        //let resultado;
         const {numero_1, numero_2} = req.body;
         resultado = parseFloat(numero_1) + parseFloat(numero_2) ;
         res.json(resultado);}
@@ -32,20 +31,24 @@ app.post(
 app.post(
     '/restar',
     (req, res)=>{
-        let resultado;
-        try{
         const {numero_1, numero_2} = req.body;
-        resultado = numero_1 - numero_2 ;
-        }catch(error){resultado = "Error!";}
-    res.json(resultado);}
+        resultado = parseFloat(numero_1) - parseFloat(numero_2) ;
+        res.json(resultado);}
+)
+app.post(
+    '/multiplicar',
+    (req, res)=>{
+        const {numero_1, numero_2} = req.body;
+        resultado = parseFloat(numero_1) * parseFloat(numero_2) ;
+        res.json(resultado);}
 )
 app.post(
     '/dividir',
     (req, res)=>{
-        let resultado;
+        //let resultado;
         try{
         const {numero_1, numero_2} = req.body;
-        resultado = numero_1 / numero_2 ;
+        resultado = parseFloat(numero_1) / parseFloat(numero_2) ;
         }catch(error){resultado = "Error!";}
     res.json(resultado);})
 
